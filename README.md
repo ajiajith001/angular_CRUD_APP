@@ -28,4 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Run Backend serve
 
-we are using json-server for backend api development, to start the backend api, Run 'json-server --watch db.json' in the terminal
+we are using json-server for backend api development
+
+-   run "npm install -g json-server" to install globally on the system
+-   run "json-server --watch db.json" to kick start the backend api
