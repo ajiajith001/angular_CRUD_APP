@@ -10,6 +10,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 const materialModuleList = [
 	MatToolbarModule,
@@ -22,6 +24,8 @@ const materialModuleList = [
 	MatNativeDateModule,
 	MatRadioModule,
 	MatSelectModule,
+	MatTableModule,
+	MatPaginatorModule,
 ];
 
 @NgModule({

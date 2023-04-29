@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialogRef } from '@angular/material/dialog';
+import { Employee } from 'src/app/models/employee';
+import { EmployeeService } from 'src/app/services/employee.service';
 
 @Component({
 	selector: 'app-employee-add-edit',
@@ -17,7 +19,11 @@ export class EmployeeAddEditComponent {
 		'Assistant Director',
 	];
 
-	constructor(private _fb: FormBuilder) {
+	constructor(
+		private _fb: FormBuilder,
+		private _employee: EmployeeService,
+		private _dialogRef: MatDialogRef<EmployeeAddEditComponent>
+	) {
 		this.empForm = this._fb.group({
 			firstName: '',
 			lastName: '',
@@ -29,9 +35,26 @@ export class EmployeeAddEditComponent {
 		});
 	}
 
+	private addEmployee(data: Employee): void {
+		this._employee.addEmployee(data).subscribe({
+			next: (value: any) => {
+				alert('Employee added successfully');
+				this._dialogRef.close(true);
+			},
+			error: (err: any) => {
+				console.log(err);
+			},
+		});
+	}
+
 	onFormSubmit(): void {
 		if (this.empForm.valid) {
 			console.log(this.empForm.value);
+			this.addEmployee(this.empForm.value);
 		}
+	}
+
+	onClose(): void {
+		this._dialogRef.close();
 	}
 }

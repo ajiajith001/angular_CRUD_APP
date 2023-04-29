@@ -1,20 +1,101 @@
 {
-	"posts": [
-		{
-			"id": 1,
-			"title": "json-server",
-			"author": "typicode"
-		}
-	],
-	"comments": [
-		{
-			"id": 1,
-			"body": "some comment",
-			"postId": 1
-		}
-	],
-	"profile": {
-		"name": "typicode"
-	},
-	"employees": []
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Aji",
+      "lastName": "T A",
+      "email": "aji.learn@outlook.com",
+      "dob": "1992-03-07T18:30:00.000Z",
+      "gender": "male",
+      "role": "Senior Associate",
+      "experience": 7.5,
+      "id": 1
+    },
+    {
+      "firstName": "Anjana",
+      "lastName": "Rajeev",
+      "email": "anjana.r@gmail.com",
+      "dob": "2001-01-16T18:30:00.000Z",
+      "gender": "female",
+      "role": "Associate",
+      "experience": 1,
+      "id": 2
+    },
+    {
+      "firstName": "Sreejith",
+      "lastName": "S",
+      "email": "sreejith.s@gmail.com",
+      "dob": "1992-08-31T18:30:00.000Z",
+      "gender": "male",
+      "role": "Senior Associate",
+      "experience": 8,
+      "id": 3
+    },
+    {
+      "firstName": "Ajay",
+      "lastName": "Ghosh",
+      "email": "ajay.ghosh@gmail.com",
+      "dob": "1992-05-03T18:30:00.000Z",
+      "gender": "male",
+      "role": "Senior Associate",
+      "experience": 7,
+      "id": 4
+    },
+    {
+      "firstName": "Ann",
+      "lastName": "S",
+      "email": "ann.s@gmail.com",
+      "dob": "1992-06-08T18:30:00.000Z",
+      "gender": "female",
+      "role": "Senior Associate",
+      "experience": 7,
+      "id": 5
+    },
+    {
+      "firstName": "Sarath",
+      "lastName": "Narayan",
+      "email": "sarath.narayan@gmail.com",
+      "dob": "1985-07-08T18:30:00.000Z",
+      "gender": "male",
+      "role": "Assistant Director",
+      "experience": 14,
+      "id": 6
+    },
+    {
+      "firstName": "Aswathy",
+      "lastName": "S",
+      "email": "aswathy.s@gmail.com",
+      "dob": "1984-11-18T18:30:00.000Z",
+      "gender": "female",
+      "role": "Supervising Associate",
+      "experience": 12,
+      "id": 7
+    },
+    {
+      "firstName": "Ajith",
+      "lastName": "V S",
+      "email": "ajith.v.s@gmail.com",
+      "dob": "1986-10-19T18:30:00.000Z",
+      "gender": "male",
+      "role": "Supervising Associate",
+      "experience": 12,
+      "id": 8
+    }
+  ]
 }

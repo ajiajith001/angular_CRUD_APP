@@ -8,6 +8,7 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { MaterialModule } from './material.module';
 import { EmployeeAddEditComponent } from './employee-list/employee-add-edit/employee-add-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [
@@ -21,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 		BrowserAnimationsModule,
 		MaterialModule,
 		ReactiveFormsModule,
+		HttpClientModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
