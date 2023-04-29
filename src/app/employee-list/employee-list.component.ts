@@ -6,6 +6,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { EmployeeAddEditComponent } from './employee-add-edit/employee-add-edit.component';
 import { Employee } from '../models/employee';
 import { EmployeeService } from '../services/employee.service';
+import { ToastService } from '../services/toast.service';
 
 @Component({
 	selector: 'app-employee-list',
@@ -31,7 +32,8 @@ export class EmployeeListComponent implements OnInit {
 
 	constructor(
 		private _dialog: MatDialog,
-		private _employee: EmployeeService
+		private _employee: EmployeeService,
+		private _toast: ToastService
 	) {}
 
 	ngOnInit(): void {
@@ -54,7 +56,7 @@ export class EmployeeListComponent implements OnInit {
 	deleteEmployee(id: number): void {
 		this._employee.deleteEmployee(id).subscribe({
 			next: () => {
-				alert('Employee deleted successfully');
+				this._toast.open('Employee deleted successfully');
 				this.getEmployeeList();
 			},
 			error: (err) => {
@@ -69,7 +71,6 @@ export class EmployeeListComponent implements OnInit {
 		});
 		dialogRef.afterClosed().subscribe({
 			next: (value) => {
-				console.log('closed with value ', value);
 				value && this.getEmployeeList();
 			},
 		});
@@ -79,7 +80,6 @@ export class EmployeeListComponent implements OnInit {
 		const dialogRef = this._dialog.open(EmployeeAddEditComponent);
 		dialogRef.afterClosed().subscribe({
 			next: (value) => {
-				console.log('closed with value ', value);
 				value && this.getEmployeeList();
 			},
 		});

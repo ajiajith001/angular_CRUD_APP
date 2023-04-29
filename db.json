@@ -58,16 +58,6 @@
       "id": 4
     },
     {
-      "firstName": "Ann",
-      "lastName": "S",
-      "email": "ann.s@gmail.com",
-      "dob": "1992-06-08T18:30:00.000Z",
-      "gender": "female",
-      "role": "Senior Associate",
-      "experience": 7,
-      "id": 5
-    },
-    {
       "firstName": "Sarath",
       "lastName": "Chandran",
       "email": "sarath.chandran@gmail.com",
@@ -96,6 +86,26 @@
       "role": "Supervising Associate",
       "experience": 12,
       "id": 8
+    },
+    {
+      "firstName": "Sherin",
+      "lastName": "Mathew",
+      "email": "sherin.mathew@gmail.com",
+      "dob": "1984-07-16T18:30:00.000Z",
+      "gender": "male",
+      "role": "Assistant Director",
+      "experience": 15,
+      "id": 9
+    },
+    {
+      "firstName": "Anshul",
+      "lastName": "Jain",
+      "email": "anshul.jain",
+      "dob": "1992-11-09T18:30:00.000Z",
+      "gender": "male",
+      "role": "Supervising Associate",
+      "experience": 11,
+      "id": 10
     }
   ]
 }
