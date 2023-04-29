@@ -63,6 +63,18 @@ export class EmployeeListComponent implements OnInit {
 		});
 	}
 
+	openEditEmpForm(data: Employee) {
+		const dialogRef = this._dialog.open(EmployeeAddEditComponent, {
+			data,
+		});
+		dialogRef.afterClosed().subscribe({
+			next: (value) => {
+				console.log('closed with value ', value);
+				value && this.getEmployeeList();
+			},
+		});
+	}
+
 	openAddEditEmpForm() {
 		const dialogRef = this._dialog.open(EmployeeAddEditComponent);
 		dialogRef.afterClosed().subscribe({

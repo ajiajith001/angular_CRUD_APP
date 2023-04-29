@@ -34,7 +34,7 @@
       "dob": "2001-01-16T18:30:00.000Z",
       "gender": "female",
       "role": "Associate",
-      "experience": 1,
+      "experience": 0.2,
       "id": 2
     },
     {
@@ -69,8 +69,8 @@
     },
     {
       "firstName": "Sarath",
-      "lastName": "Narayan",
-      "email": "sarath.narayan@gmail.com",
+      "lastName": "Chandran",
+      "email": "sarath.chandran@gmail.com",
       "dob": "1985-07-08T18:30:00.000Z",
       "gender": "male",
       "role": "Assistant Director",

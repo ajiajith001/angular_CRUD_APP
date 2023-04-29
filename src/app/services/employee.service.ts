@@ -16,6 +16,13 @@ export class EmployeeService {
 		);
 	}
 
+	updateEmployee(employeeId: number, data: Employee): Observable<Employee> {
+		return this._http.put<Employee>(
+			`http://localhost:3000/employees/${employeeId}`,
+			data
+		);
+	}
+
 	getEmployeeList(): Observable<Employee[]> {
 		return this._http.get<Employee[]>('http://localhost:3000/employees');
 	}
